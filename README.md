@@ -1,7 +1,7 @@
 # ML DevOps Nano Degree
 My associated work for the ML DevOps Nanodegree course that I am enrolled for through the online educational services website- Udacity!
 
-##Introduction
+## Introduction
 In my day to day, I have been facing the shortcomings of the traditional DevOps practices, when applied to ML products. Currently, in my job, as the ML Lead for my team, I am responsible for the end to end deployement of a multi-lingual semantic search solution. The task at hand requires traditional components such as, CI-CD, Unit tests, integration tests,etc, but going through the development cycles, we have also identified a need for more ML focused components to,
 
 1. check & monitor quality of the data parser,
