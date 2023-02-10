@@ -10,7 +10,7 @@ In my day to day, I have been facing the shortcomings of the traditional DevOps 
 4. log and monitor latency of the data pipeline and the API,
 5. collect user journey data for retraining and validation, etc.
 
-In order to fill these gaps in our understanding I have enrolled into Udacity's ML DevOps Nanodegree(https://www.udacity.com/course/machine-learning-dev-ops-engineer-nanodegree--nd0821), which so far seems to be the only comprehensive and hands-on course focused on this specific area. Each individual repo is focused on their respective module, as in the course.
+In order to fill these gaps in our understanding I have enrolled into Udacity's [ML DevOps Nanodegree](https://www.udacity.com/course/machine-learning-dev-ops-engineer-nanodegree--nd0821), which so far seems to be the only comprehensive and hands-on course focused on this specific area. Each individual repo is focused on their respective module, as in the course.
 
 Please go through them to follow my progress and grade me (if you are my course instructor)!
 
