@@ -129,6 +129,10 @@ def encoder_helper(df, category_lst, response):
             df: pandas dataframe with new columns for analysis
     '''
 
+    if 'Churn' not in df:
+        df['Churn'] = df['Attrition_Flag'].apply(
+            lambda val: 0 if val == "Existing Customer" else 1)
+        
     for category in category_lst:
         column_lst = []
         column_groups = df.groupby(category).mean()['Churn']
@@ -156,7 +160,7 @@ def perform_feature_engineering(df, response='Churn'):
               y_train: y training data
               y_test: y testing data
     '''
-    # Creating binary variable 'Chrun', for cases when EDA is not performed
+    # Creating binary variable 'Chrun', for cases when EDA is not performed before hand
     if 'Churn' not in df:
         df['Churn'] = df['Attrition_Flag'].apply(
             lambda val: 0 if val == "Existing Customer" else 1)
@@ -244,7 +248,7 @@ def classification_report_image(y_train,
             'fontsize': 10}, fontproperties='monospace')
     plt.axis('off')
 
-    result_file = result_dir + model_name + '_classf_rep' + '.png'
+    result_file = result_dir + 'classf_rep_' + model_name  + '.png'
     plt.savefig(fname=result_file)
 
 
@@ -313,7 +317,7 @@ def roc_plotter(model, X_test, y_test, roc_file):
     plt.close()
 
 
-def train_models(df, model_dir, result_dir, clf, param_grid=None):
+def train_models(df, model_dir, result_dir, clf, response_var_name, param_grid=None):
     '''
     train, store model results: images + scores, and store models. Adding more function parameters
     to make this function more modular
@@ -334,7 +338,7 @@ def train_models(df, model_dir, result_dir, clf, param_grid=None):
 
     # Seperating Features and target variable, and performing train-test split
     X_train, X_test, y_train, y_test = perform_feature_engineering(
-        df, response='Churn')
+        df, response=response_var_name)
 
     # Checking for parameter grid, preforming grid search if the grid is provided
     # and fitting the classifier
@@ -401,4 +405,5 @@ if __name__ == '__main__':
             model_dir=MODEL_DIR,
             result_dir=RESULT_DIR,
             clf=classif,
+            response_var_name = 'Churn',
             param_grid=grid)

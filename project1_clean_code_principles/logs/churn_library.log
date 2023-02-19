@@ -1,0 +1,26 @@
+2023-02-19 13:08:59 - root - INFO - Testing import_data: Success
+2023-02-19 13:08:59 - numexpr.utils - INFO - Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-02-19 13:08:59 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2023-02-19 13:09:02 - root - INFO - EDA Function Run: Success
+2023-02-19 13:09:02 - root - INFO - churn_distribution.jpeg file was generated: Success
+2023-02-19 13:09:02 - root - INFO - customer_age_distribution.png file was generated: Success
+2023-02-19 13:09:02 - root - INFO - marital_status_distribution.png file was generated: Success
+2023-02-19 13:09:02 - root - INFO - total_transaction_distribution.png file was generated: Success
+2023-02-19 13:09:02 - root - INFO - heatmap.png file was generated: Success
+2023-02-19 13:09:02 - root - INFO - df_description file was generated: Success
+2023-02-19 13:09:02 - root - INFO - df_head file was generated: Success
+2023-02-19 13:09:02 - root - INFO - df_null_counts file was generated: Success
+2023-02-19 13:09:02 - root - INFO - df_shape file was generated: Success
+2023-02-19 13:09:04 - root - INFO - Testing encoder_helper for response == None: Success
+2023-02-19 13:09:06 - root - INFO - Testing encoder_helper for response == churn: Success
+2023-02-19 13:09:08 - root - INFO - Target variable created: Success
+2023-02-19 13:09:08 - root - INFO - Test-Train split was performed in the right ratios: Success
+2023-02-19 13:09:08 - root - INFO - Target variable dataframes are the right shapes: Success
+2023-02-19 13:09:12 - root - INFO - LogisticRegression() Model was trained successfuly: Success
+2023-02-19 13:09:12 - root - INFO - Model File LogisticRegression().pkl was found: Success
+2023-02-19 13:09:12 - root - INFO - roc_curve_for LogisticRegression() was found: Success
+2023-02-19 13:09:12 - root - INFO - classf_rep_for LogisticRegression() was found: Success
+2023-02-19 13:09:21 - root - INFO - RandomForestClassifier() Model was trained successfuly: Success
+2023-02-19 13:09:21 - root - INFO - Model File RandomForestClassifier().pkl was found: Success
+2023-02-19 13:09:21 - root - INFO - roc_curve_for RandomForestClassifier() was found: Success
+2023-02-19 13:09:21 - root - INFO - classf_rep_for RandomForestClassifier() was found: Success
