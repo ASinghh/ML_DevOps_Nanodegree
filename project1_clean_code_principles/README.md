@@ -43,7 +43,7 @@ The structure of this project directory tree is displayed as follows:
 ├── churn_library.py (My module to modularize the process) 
 ├── churn_notebook.ipynb (notebook provided by Udacity, containing the process)
 ├── churn_script_logging_and_tests.py (My module to test the functions and log results) 
-└── requirements_py3.8.txt
+└── requirements_py3.6.txt
 ```
 
 ## Running Files
