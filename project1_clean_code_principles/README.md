@@ -115,4 +115,4 @@ autopep8 --in-place --aggressive --aggressive churn_library.py
 ```
 
 ### Thank you
-Thank you for going through my project. You can provide feedback or reachout to me at my [email](mailto:ashutoshsinghdce@gmail.com).
+Thank you for going through my project. You can provide feedback or reach out to me through my [email](mailto:ashutoshsinghdce@gmail.com).
