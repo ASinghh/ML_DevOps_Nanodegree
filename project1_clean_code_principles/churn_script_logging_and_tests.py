@@ -186,31 +186,31 @@ def test_train_models():
                 response_var_name='Churn',
                 param_grid=None)
             logging.info(
-                '%s Model was trained successfuly: Success', str(classif))
+                '%s Model was trained successfuly: Success', str(classif)[0:50] + ")")
         except BaseException as err:
             logging.error(
-                '%s Model was not trained successfuly: Failure', str(classif))
+                '%s Model was not trained successfuly: Failure', str(classif)[0:50] + ")")
             raise err
 
         # Assert the model file is saved
         try:
-            assert os.path.isfile(model_dir + str(classif) + '.pkl') is True
+            assert os.path.isfile(model_dir + str(classif)[0:50] + ")" + '.pkl') is True
             logging.info('Model File %s was found: Success',
-                         str(classif) + '.pkl')
+                         str(classif)[0:50] + ")" + '.pkl')
         except AssertionError as err:
             logging.error('Model File %s was not found: Failure',
-                          str(classif) + '.pkl')
+                          str(classif)[0:50] + ")" + '.pkl')
             raise err
 
         # Assert the creation of ROC and Characterisitcs plots
         for plot in plot_list:
             try:
                 assert os.path.isfile(
-                    result_dir + plot + str(classif) + '.png') is True
-                logging.info(plot + 'for %s was found: Success', str(classif))
+                    result_dir + plot + str(classif)[0:50] + ")" + '.png') is True
+                logging.info(plot + 'for %s was found: Success', str(classif)[0:50] + ")")
             except AssertionError as err:
                 logging.error(
-                    plot + 'for %s was not found: failure', str(classif))
+                    plot + 'for %s was not found: failure', str(classif)[0:50] + ")")
                 raise err
 
 

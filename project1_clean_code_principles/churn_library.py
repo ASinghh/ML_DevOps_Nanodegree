@@ -355,7 +355,7 @@ def train_models(df, model_dir, result_dir, clf, response_var_name, param_grid=N
     y_test_preds = model.predict(X_test)
 
     # Generating model file name
-    model_name = str(clf)
+    model_name = str(clf)[0:50] + ")"
     model_file = model_dir + model_name + '.pkl'
     roc_file = result_dir + 'roc_curve_' + model_name + '.png'
 
@@ -406,4 +406,4 @@ if __name__ == '__main__':
             result_dir=RESULT_DIR,
             clf=classif,
             response_var_name = 'Churn',
-            param_grid=grid)
+            param_grid=None)
