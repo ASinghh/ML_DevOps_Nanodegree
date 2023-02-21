@@ -15,7 +15,7 @@ The structure of this project directory tree is displayed as follows:
 ```
 ├── data
 │   └── bank_data.csv (Data file)
-├── dataset_characteristics (Features of the dataframe
+├── dataset_characteristics (Features of the dataframe)
 │   │   ├── df_description
 │   │   ├── df_head
 │   │   ├── .
@@ -46,69 +46,73 @@ The structure of this project directory tree is displayed as follows:
 └── requirements_py3.6.txt
 ```
 
-## Running Files
+## Run the program locally
 
-### How to clone the project
+to the run the program on your local machine or environment, follow the following steps,
 
-to clone this project, make sure you have git installed in your computer. If you have already installed git, run this command
+### Setting up environment
 
-```
-git clone https://github.com/mohrosidi/udacity_customer_churn.git
-```
-
-### Dependencies
-
-Here is a list of libraries used in this repository:
+install all the dependencies mentioned in requirements_py3.6.txt by running the following command,
 
 ```
-autopep8==1.5.7
-joblib==0.11
-matplotlib==2.1.0
-numpy==1.12.1
-pandas==0.23.3
-pylint==2.9.6
-scikit-learn==0.22
-seaborn==0.8.1
+python -m pip install -r requirements_py3.6.txt
 ```
 
-To be able to run this project, you must install python library using the following command:
+### clone the project
+
+clone this project to your local command by running the command,
 
 ```
-pip install -r requirements.txt
+https://github.com/ASinghh/ML_DevOps_Nanodegree.git
+```
+
+### Change Directory
+
+Change directory to the project directory by running the following command,
+
+```
+cd project1_clean_code_principles
 ```
 
 ### Modeling
 
-To run the workflow, simply run the `churn_library.py` in your terminal using command bellow:
+To perform the actions as done in churn_notebook (data import, EDA, model training, and estimation), run the following command,
 
 ```
 ipython churn_library.py
 ```
+If you would like to use individual functions, please import them individually from churn_library.py. Play arround!
 
 ### Testing and Logging
 
-In other conditions, suppose you want to change the configuration of the modeling workflow, such as: changing the path of the data location, adding other models, adding feature engineering stages. You can change it in `churn_library.py` files. To test if your changes are going well, you need to do testing and logging.
-
-To do testing and logging, you need to change a number of configurations in the `churn_script_logging_and_tests.py` file, such as: target column name, categorical column name list, data location, etc. After that, run the following command in the terminal to perform testing and loggingAfter that, run the following command in the terminal to perform testing and logging:
-
+To perform the unit tests for the functions defined in churn_library.py, and log the results, please run the following command,
 ```
 ipython churn_script_logging_and_tests.py
 ```
 
-### Cleaning up your code
+If you would like to use pytest, please run
+```
+pytest churn_script_logging_and_tests.py
+```
+Note that the later command would preform tests and display the results on your command line, but would not log the results.
 
-Make sure the code you create complies with `PEP 8` rules. To check it automatically, run pylint on the terminal.
+### Checking and enforcing Pep8 standards
+
+To test compliance with Pep8 standards run the following command to get a score,
 
 ```
-pylint churn_library.py
 pylint churn_script_logging_and_tests.py
+pylint churn_library.py
 ```
 
-`Pylint` will provide recommendations for improvements in your code. A good code is a code that has a score close to 10.
+You can increase the pylint score by remedying the pointers highlighted in the output provided by the above commands.
 
-To make repairs automatically, you can use autopep8.
+You can also use autopep8 to remedy some fo the pointers provided by pylint, by running the following commands,
 
 ```
 autopep8 --in-place --aggressive --aggressive churn_script_logging_and_tests.py
 autopep8 --in-place --aggressive --aggressive churn_library.py
 ```
+
+### Thank you
+Thank you for going through my project. You can provide feedback or reachout to me at my [email](ashutoshsinghdce@gmail.com).
