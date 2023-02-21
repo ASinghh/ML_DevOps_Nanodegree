@@ -12,7 +12,6 @@ The second part of the project was to write unit tests for the functions defined
 The structure of this project directory tree is displayed as follows:
 
 ```
-.
 ├── data
 │   └── bank_data.csv (Data file)
 ├── dataset_characteristics (Features of the dataframe
