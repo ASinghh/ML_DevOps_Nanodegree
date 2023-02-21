@@ -5,7 +5,8 @@ Project **Predict Customer Churn** from **Clean Coding Principles** module of Ud
 ## Project Description
 
 The Churn_notebook was provided by Udacity as is in the repo. The first part of the project was to define a module (churn_library.py) to modularize the methods used in the notebook, into functions. The module is expected to follow the clean coding principles that were tought in the course.
-The second part of the project was to write unit tests for the functions defined in churn_library.py (churn_script_logging_and_tests.py) and log the test resutls.
+The second part of the project was to write unit tests for the functions defined in churn_library.py (churn_script_logging_and_tests.py) and log the test results.
+Detailed requirements for the project are given by this [rubric](https://review.udacity.com/#!/rubrics/3094/view).
 
 ## Project Directory Structure
 
