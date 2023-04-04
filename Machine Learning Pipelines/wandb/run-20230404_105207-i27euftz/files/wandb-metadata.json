@@ -1,0 +1,49 @@
+{
+    "os": "Windows-10-10.0.19042-SP0",
+    "python": "3.8.16",
+    "heartbeatAt": "2023-04-04T15:52:10.976101",
+    "startedAt": "2023-04-04T15:52:07.174248",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "Desktop/ML_DevOps_Nanodegree/Machine Learning Pipelines/WnB_Exploration.ipynb",
+    "root": "C:/Users/Ashutosh_Singh8/Desktop/ML_DevOps_Nanodegree",
+    "git": {
+        "remote": "https://github.com/ASinghh/ML_DevOps_Nanodegree.git",
+        "commit": "8a25de1299e210b92871a474d0cb9119cf716ddc"
+    },
+    "email": null,
+    "host": "W105K59GK3",
+    "username": "Ashutosh_Singh8",
+    "executable": "C:\\Users\\Ashutosh_Singh8\\Anaconda3\\envs\\mlops\\python.exe",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2496.0,
+        "min": 0.0,
+        "max": 2496.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2496.0,
+            "min": 0.0,
+            "max": 2496.0
+        }
+    ],
+    "disk": {
+        "total": 474.81347274780273,
+        "used": 182.35562896728516
+    },
+    "gpu": "NVIDIA T1200 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA T1200 Laptop GPU",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 31.726390838623047
+    }
+}

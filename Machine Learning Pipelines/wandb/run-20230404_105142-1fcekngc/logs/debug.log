@@ -1,0 +1,110 @@
+2023-04-04 10:51:42,610 INFO    MainThread:10760 [wandb_setup.py:_flush():68] Configure stats pid to 10760
+2023-04-04 10:51:42,610 INFO    MainThread:10760 [wandb_setup.py:_flush():68] Loading settings from C:\Users\Ashutosh_Singh8\.config\wandb\settings
+2023-04-04 10:51:42,611 INFO    MainThread:10760 [wandb_setup.py:_flush():68] Loading settings from C:\Users\Ashutosh_Singh8\Desktop\ML_DevOps_Nanodegree\Machine Learning Pipelines\wandb\settings
+2023-04-04 10:51:42,611 INFO    MainThread:10760 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-04-04 10:51:42,611 INFO    MainThread:10760 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-04-04 10:51:42,612 INFO    MainThread:10760 [wandb_init.py:_log_setup():492] Logging user logs to C:\Users\Ashutosh_Singh8\Desktop\ML_DevOps_Nanodegree\Machine Learning Pipelines\wandb\run-20230404_105142-1fcekngc\logs\debug.log
+2023-04-04 10:51:42,612 INFO    MainThread:10760 [wandb_init.py:_log_setup():493] Logging internal logs to C:\Users\Ashutosh_Singh8\Desktop\ML_DevOps_Nanodegree\Machine Learning Pipelines\wandb\run-20230404_105142-1fcekngc\logs\debug-internal.log
+2023-04-04 10:51:42,612 INFO    MainThread:10760 [wandb_init.py:_jupyter_setup():438] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x000002624E391B80>
+2023-04-04 10:51:42,613 INFO    MainThread:10760 [wandb_init.py:init():532] calling init triggers
+2023-04-04 10:51:42,613 INFO    MainThread:10760 [wandb_init.py:init():538] wandb.init called with sweep_config: {}
+config: {}
+2023-04-04 10:51:42,613 INFO    MainThread:10760 [wandb_init.py:init():588] starting backend
+2023-04-04 10:51:42,613 INFO    MainThread:10760 [wandb_init.py:init():592] setting up manager
+2023-04-04 10:51:42,616 INFO    MainThread:10760 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn, using: spawn
+2023-04-04 10:51:42,668 INFO    MainThread:10760 [wandb_init.py:init():599] backend started and connected
+2023-04-04 10:51:42,674 INFO    MainThread:10760 [wandb_run.py:_label_probe_notebook():1203] probe notebook
+2023-04-04 10:51:42,676 INFO    MainThread:10760 [wandb_run.py:_label_probe_notebook():1213] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-04-04 10:51:42,676 INFO    MainThread:10760 [wandb_init.py:init():687] updated telemetry
+2023-04-04 10:51:43,010 WARNING MainThread:10760 [wandb_init.py:init():1154] interrupted
+Traceback (most recent call last):
+  File "C:\Users\Ashutosh_Singh8\Anaconda3\envs\mlops\lib\site-packages\wandb\sdk\wandb_init.py", line 1133, in init
+    run = wi.init()
+  File "C:\Users\Ashutosh_Singh8\Anaconda3\envs\mlops\lib\site-packages\wandb\sdk\wandb_init.py", line 705, in init
+    run._populate_git_info()
+  File "C:\Users\Ashutosh_Singh8\Anaconda3\envs\mlops\lib\site-packages\wandb\sdk\wandb_run.py", line 773, in _populate_git_info
+    self._remote_url, self._commit = repo.remote_url, repo.last_commit
+  File "C:\Users\Ashutosh_Singh8\Anaconda3\envs\mlops\lib\site-packages\wandb\sdk\lib\git.py", line 93, in last_commit
+    if not self.repo.head or not self.repo.head.is_valid():
+  File "C:\Users\Ashutosh_Singh8\Anaconda3\envs\mlops\lib\site-packages\git\refs\symbolic.py", line 396, in is_valid
+    self.object
+  File "C:\Users\Ashutosh_Singh8\Anaconda3\envs\mlops\lib\site-packages\git\refs\symbolic.py", line 219, in _get_object
+    return Object.new_from_sha(self.repo, hex_to_bin(self.dereference_recursive(self.repo, self.path)))
+  File "C:\Users\Ashutosh_Singh8\Anaconda3\envs\mlops\lib\site-packages\git\objects\base.py", line 94, in new_from_sha
+    oinfo = repo.odb.info(sha1)
+  File "C:\Users\Ashutosh_Singh8\Anaconda3\envs\mlops\lib\site-packages\git\db.py", line 40, in info
+    hexsha, typename, size = self._git.get_object_header(bin_to_hex(binsha))
+  File "C:\Users\Ashutosh_Singh8\Anaconda3\envs\mlops\lib\site-packages\git\cmd.py", line 1382, in get_object_header
+    cmd = self._get_persistent_cmd("cat_file_header", "cat_file", batch_check=True)
+  File "C:\Users\Ashutosh_Singh8\Anaconda3\envs\mlops\lib\site-packages\git\cmd.py", line 1361, in _get_persistent_cmd
+    cmd = self._call_process(cmd_name, *args, **options)
+  File "C:\Users\Ashutosh_Singh8\Anaconda3\envs\mlops\lib\site-packages\git\cmd.py", line 1315, in _call_process
+    return self.execute(call, **exec_kwargs)
+  File "C:\Users\Ashutosh_Singh8\Anaconda3\envs\mlops\lib\site-packages\git\cmd.py", line 985, in execute
+    proc = Popen(
+  File "C:\Users\Ashutosh_Singh8\Anaconda3\envs\mlops\lib\subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Ashutosh_Singh8\Anaconda3\envs\mlops\lib\subprocess.py", line 1311, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+KeyboardInterrupt
+2023-04-04 10:52:07,197 INFO    MainThread:10760 [wandb_setup.py:_flush():68] Configure stats pid to 10760
+2023-04-04 10:52:07,197 INFO    MainThread:10760 [wandb_setup.py:_flush():68] Loading settings from C:\Users\Ashutosh_Singh8\.config\wandb\settings
+2023-04-04 10:52:07,198 INFO    MainThread:10760 [wandb_setup.py:_flush():68] Loading settings from C:\Users\Ashutosh_Singh8\Desktop\ML_DevOps_Nanodegree\Machine Learning Pipelines\wandb\settings
+2023-04-04 10:52:07,198 INFO    MainThread:10760 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-04-04 10:52:07,198 INFO    MainThread:10760 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-04-04 10:52:07,199 INFO    MainThread:10760 [wandb_init.py:_log_setup():492] Logging user logs to C:\Users\Ashutosh_Singh8\Desktop\ML_DevOps_Nanodegree\Machine Learning Pipelines\wandb\run-20230404_105207-i27euftz\logs\debug.log
+2023-04-04 10:52:07,199 INFO    MainThread:10760 [wandb_init.py:_log_setup():493] Logging internal logs to C:\Users\Ashutosh_Singh8\Desktop\ML_DevOps_Nanodegree\Machine Learning Pipelines\wandb\run-20230404_105207-i27euftz\logs\debug-internal.log
+2023-04-04 10:52:07,200 INFO    MainThread:10760 [wandb_init.py:init():532] calling init triggers
+2023-04-04 10:52:07,200 INFO    MainThread:10760 [wandb_init.py:init():538] wandb.init called with sweep_config: {}
+config: {}
+2023-04-04 10:52:07,200 INFO    MainThread:10760 [wandb_init.py:init():588] starting backend
+2023-04-04 10:52:07,202 INFO    MainThread:10760 [wandb_init.py:init():592] setting up manager
+2023-04-04 10:52:07,206 INFO    MainThread:10760 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn, using: spawn
+2023-04-04 10:52:07,209 INFO    MainThread:10760 [wandb_init.py:init():599] backend started and connected
+2023-04-04 10:52:07,215 INFO    MainThread:10760 [wandb_run.py:_label_probe_notebook():1203] probe notebook
+2023-04-04 10:52:07,216 INFO    MainThread:10760 [wandb_run.py:_label_probe_notebook():1213] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-04-04 10:52:07,217 INFO    MainThread:10760 [wandb_init.py:init():687] updated telemetry
+2023-04-04 10:52:07,638 INFO    MainThread:10760 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2023-04-04 10:52:09,249 INFO    MainThread:10760 [wandb_run.py:_on_init():2134] communicating current version
+2023-04-04 10:52:10,019 INFO    MainThread:10760 [wandb_run.py:_on_init():2143] got version response upgrade_message: "wandb version 0.14.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-04-04 10:52:10,019 INFO    MainThread:10760 [wandb_init.py:init():775] starting run threads in backend
+2023-04-04 10:52:40,313 INFO    MainThread:10760 [wandb_run.py:_console_start():2114] atexit reg
+2023-04-04 10:52:40,314 INFO    MainThread:10760 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-04-04 10:52:40,314 INFO    MainThread:10760 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-04-04 10:52:40,314 INFO    MainThread:10760 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-04-04 10:52:40,315 INFO    MainThread:10760 [wandb_init.py:init():817] run started, returning control to user process
+2023-04-04 11:01:15,487 INFO    MainThread:10760 [wandb_run.py:_finish():1854] finishing run ashutoshsinghdce/demo_artifact_1/i27euftz
+2023-04-04 11:01:15,487 INFO    MainThread:10760 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 0
+2023-04-04 11:01:15,488 INFO    MainThread:10760 [wandb_run.py:_restore():2066] restore
+2023-04-04 11:01:15,488 INFO    MainThread:10760 [wandb_run.py:_restore():2072] restore done
+2023-04-04 11:12:54,510 INFO    MainThread:10760 [wandb_run.py:_finish():1854] finishing run ashutoshsinghdce/demo_artifact_1/i27euftz
+2023-04-04 13:27:34,657 INFO    MainThread:10760 [wandb_setup.py:_flush():68] Configure stats pid to 10760
+2023-04-04 13:27:34,658 INFO    MainThread:10760 [wandb_setup.py:_flush():68] Loading settings from C:\Users\Ashutosh_Singh8\.config\wandb\settings
+2023-04-04 13:27:34,658 INFO    MainThread:10760 [wandb_setup.py:_flush():68] Loading settings from C:\Users\Ashutosh_Singh8\Desktop\ML_DevOps_Nanodegree\Machine Learning Pipelines\wandb\settings
+2023-04-04 13:27:34,658 INFO    MainThread:10760 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-04-04 13:27:34,658 INFO    MainThread:10760 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-04-04 13:27:34,659 INFO    MainThread:10760 [wandb_init.py:_log_setup():492] Logging user logs to C:\Users\Ashutosh_Singh8\Desktop\ML_DevOps_Nanodegree\Machine Learning Pipelines\wandb\run-20230404_132734-cfb5v0f9\logs\debug.log
+2023-04-04 13:27:34,659 INFO    MainThread:10760 [wandb_init.py:_log_setup():493] Logging internal logs to C:\Users\Ashutosh_Singh8\Desktop\ML_DevOps_Nanodegree\Machine Learning Pipelines\wandb\run-20230404_132734-cfb5v0f9\logs\debug-internal.log
+2023-04-04 13:27:34,659 INFO    MainThread:10760 [wandb_init.py:init():532] calling init triggers
+2023-04-04 13:27:34,660 INFO    MainThread:10760 [wandb_init.py:init():538] wandb.init called with sweep_config: {}
+config: {}
+2023-04-04 13:27:34,660 INFO    MainThread:10760 [wandb_init.py:init():588] starting backend
+2023-04-04 13:27:34,660 INFO    MainThread:10760 [wandb_init.py:init():592] setting up manager
+2023-04-04 13:27:34,664 INFO    MainThread:10760 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn, using: spawn
+2023-04-04 13:27:34,668 INFO    MainThread:10760 [wandb_init.py:init():599] backend started and connected
+2023-04-04 13:27:34,689 INFO    MainThread:10760 [wandb_run.py:_label_probe_notebook():1203] probe notebook
+2023-04-04 13:27:34,689 INFO    MainThread:10760 [wandb_run.py:_label_probe_notebook():1213] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-04-04 13:27:34,689 INFO    MainThread:10760 [wandb_init.py:init():687] updated telemetry
+2023-04-04 13:27:35,144 INFO    MainThread:10760 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2023-04-04 13:28:35,639 ERROR   MainThread:10760 [wandb_init.py:init():741] backend process timed out, exiting...
+encountered error: Error communicating with wandb process, exiting...
+For more info see: https://docs.wandb.ai/library/init#init-start-error
+2023-04-04 13:28:35,653 ERROR   MainThread:10760 [wandb_init.py:init():1160] error
+Traceback (most recent call last):
+  File "C:\Users\Ashutosh_Singh8\Anaconda3\envs\mlops\lib\site-packages\wandb\sdk\wandb_init.py", line 1133, in init
+    run = wi.init()
+  File "C:\Users\Ashutosh_Singh8\Anaconda3\envs\mlops\lib\site-packages\wandb\sdk\wandb_init.py", line 759, in init
+    raise error
+wandb.errors.CommError: Error communicating with wandb process, exiting...
+For more info see: https://docs.wandb.ai/library/init#init-start-error
